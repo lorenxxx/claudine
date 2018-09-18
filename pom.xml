@@ -17,37 +17,39 @@
     </parent>
 
     <modules>
-        <module>claudine-boot</module>
+        <module>claudine-parent</module>
     </modules>
 
     <name>claudine</name>
     <url>http://www.us.com</url>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
-    </properties>
+    <organization>
+        <name>US Corp</name>
+        <url>http://www.us.com/</url>
+    </organization>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.20</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+    <developers>
+        <developer>
+            <id>Loren</id>
+            <name>Loren</name>
+            <email>liangliangpro@outlook.com</email>
+            <organization>US</organization>
+            <organizationUrl>http://www.us.com/</organizationUrl>
+            <roles>
+                <role>Project Leader</role>
+            </roles>
+        </developer>
+    </developers>
 
     <repositories>
+        <repository>
+            <id>springsource-repos</id>
+            <name>SpringSource Repository</name>
+            <url>http://repo.spring.io/release/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
         <repository>
             <id>us-release</id>
             <url>http://116.62.205.252:8081/repository/us-release/</url>
