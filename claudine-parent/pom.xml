@@ -28,7 +28,19 @@
     </properties>
 
     <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.us</groupId>
+                <artifactId>claudine-core</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
 
+            <dependency>
+                <groupId>com.us</groupId>
+                <artifactId>claudine-common</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
     </dependencyManagement>
 
 	<dependencies>
