@@ -21,6 +21,7 @@
             <groupId>com.us</groupId>
             <artifactId>claudine-core</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.us</groupId>
             <artifactId>claudine-common</artifactId>
