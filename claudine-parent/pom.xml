@@ -4,8 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>claudine-parent</artifactId>
+    <name>claudine-parent</name>
+    <description>Parent Module</description>
+
 	<packaging>pom</packaging>
-	<description>Parent Module</description>
 
     <parent>
         <groupId>com.us</groupId>
@@ -15,6 +17,7 @@
     </parent>
 
     <modules>
+        <module>../claudine-boot</module>
         <module>../claudine-core</module>
         <module>../claudine-common</module>
     </modules>
@@ -29,6 +32,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.us</groupId>
+                <artifactId>claudine-boot</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.us</groupId>
                 <artifactId>claudine-core</artifactId>
@@ -54,6 +63,30 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.databene</groupId>
+            <artifactId>contiperf</artifactId>
+            <version>2.3.4</version>
+            <scope>test</scope>
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>

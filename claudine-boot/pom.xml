@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>claudine-common</artifactId>
-    <name>claudine-common</name>
-	<description>Common Module</description>
+    <artifactId>claudine-boot</artifactId>
+    <name>claudine-boot</name>
+    <description>Core Module</description>
 
     <packaging>jar</packaging>
 
@@ -17,7 +17,14 @@
     </parent>
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.us</groupId>
+            <artifactId>claudine-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.us</groupId>
+            <artifactId>claudine-common</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
