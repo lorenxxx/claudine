@@ -26,6 +26,11 @@
             <groupId>com.us</groupId>
             <artifactId>claudine-common</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.us</groupId>
+            <artifactId>claudine-test</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
