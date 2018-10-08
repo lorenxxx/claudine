@@ -4,10 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>claudine-boot</artifactId>
-    <name>claudine-boot</name>
-    <description>Core Module</description>
 
     <packaging>jar</packaging>
+
+    <name>claudine-boot</name>
+    <description>claudine boot module</description>
 
     <parent>
         <groupId>com.us</groupId>

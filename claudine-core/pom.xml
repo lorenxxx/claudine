@@ -4,10 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>claudine-core</artifactId>
-    <name>claudine-core</name>
-    <description>Core Module</description>
 
     <packaging>jar</packaging>
+
+    <name>claudine-core</name>
+    <description>claudine core module</description>
 
     <parent>
         <groupId>com.us</groupId>

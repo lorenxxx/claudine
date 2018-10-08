@@ -5,11 +5,13 @@
 
     <groupId>com.us</groupId>
     <artifactId>claudine</artifactId>
-    <name>claudine</name>
     <version>1.0-SNAPSHOT</version>
-    <url>http://www.us.com</url>
 
     <packaging>pom</packaging>
+
+    <name>claudine</name>
+    <description>claudine framework</description>
+    <url>http://www.us.com/claudine</url>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
