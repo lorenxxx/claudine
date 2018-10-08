@@ -4,12 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 /**
  * @author liangliang
  * @date 2018/10/8 11:21 PM
  */
-@ConfigurationProperties(prefix = "claudine.swagger", ignoreInvalidFields = false)
+@Component
+@ConfigurationProperties(prefix = "claudine.swagger")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
