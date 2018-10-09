@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StopWatch;
@@ -22,6 +23,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @EnableSwagger2
 @Configuration
+@EnableConfigurationProperties(Swagger2Properties.class)
 @ConditionalOnClass({Docket.class})
 @Slf4j
 public class Swagger2AutoConfiguration {
@@ -31,7 +33,7 @@ public class Swagger2AutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean(Docket.class)
-    public Docket createRestApi(Swagger2Properties swagger2Properties) {
+    public Docket createRestApi() {
         StopWatch watch = new StopWatch();
         watch.start();
         log.debug("starting Swagger2 auto configuration...");
