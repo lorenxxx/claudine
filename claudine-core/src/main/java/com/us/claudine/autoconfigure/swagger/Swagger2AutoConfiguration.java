@@ -1,4 +1,4 @@
-package com.us.claudine.autoconfig.swagger;
+package com.us.claudine.autoconfigure.swagger;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

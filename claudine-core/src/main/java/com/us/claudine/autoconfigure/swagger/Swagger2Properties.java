@@ -1,4 +1,4 @@
-package com.us.claudine.autoconfig.swagger;
+package com.us.claudine.autoconfigure.swagger;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
