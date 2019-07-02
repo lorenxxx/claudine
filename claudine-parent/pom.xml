@@ -8,7 +8,7 @@
     <packaging>pom</packaging>
 
     <name>claudine-parent</name>
-    <description>claudine parent module</description>
+    <description>Claudine Parent Module</description>
 
     <parent>
         <groupId>com.us</groupId>
@@ -16,13 +16,6 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-
-    <modules>
-        <module>../claudine-boot</module>
-        <module>../claudine-core</module>
-        <module>../claudine-common</module>
-        <module>../claudine-test</module>
-    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -37,12 +30,6 @@
         <dependencies>
             <dependency>
                 <groupId>com.us</groupId>
-                <artifactId>claudine-boot</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.us</groupId>
                 <artifactId>claudine-core</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
@@ -50,12 +37,6 @@
             <dependency>
                 <groupId>com.us</groupId>
                 <artifactId>claudine-common</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.us</groupId>
-                <artifactId>claudine-test</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
 
@@ -86,19 +67,14 @@
     </dependencyManagement>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-		</dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
         <dependency>

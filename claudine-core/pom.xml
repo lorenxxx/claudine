@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <name>claudine-core</name>
-    <description>claudine core module</description>
+    <description>Claudine Core Module</description>
 
     <parent>
         <groupId>com.us</groupId>
@@ -18,6 +18,12 @@
     </parent>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
