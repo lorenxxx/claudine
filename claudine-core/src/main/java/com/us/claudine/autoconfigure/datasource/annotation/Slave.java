@@ -7,5 +7,5 @@ package com.us.claudine.autoconfigure.datasource.annotation;
  * @Date 2019/7/2 10:54 PM
  * @Version 1.0
  **/
-public interface Slave {
+public @interface Slave {
 }
